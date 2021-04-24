@@ -58,7 +58,7 @@ div.expo-content {
   margin-left: 200px;
 }
 
-div.cv-content, img.cover-photo {
+div.cv-content, img.cover-photo-1 {
   max-width: 100vw;
   display: block;
 }
@@ -72,8 +72,33 @@ div.cv-content {
   margin: 120px 0 0 200px;
 }
 
-img.cover-photo {
+img.cover-photo-1 {
   height: calc(100vh - 16px);
+}
+
+img.cover-photo-2 {
+  height: calc(60vh - 16px);
+  margin-left: 30px;
+  margin-top: 10vh;
+}
+
+img.cover-photo-3 {
+  height: calc(80vh - 16px);
+  margin-left: 30px;
+  margin-top: 20vh;
+}
+
+img.cover-photo-4 {
+  height: calc(50vh - 16px);
+  margin-left: 30px;
+  margin-top: 30vh;
+}
+
+img.cover-photo-5 {
+  height: calc(70vh - 16px);
+  margin-left: 30px;
+  margin-top: 15vh;
+  margin-right: 8px;
 }
 
 div.expo-content img.expo-img {
