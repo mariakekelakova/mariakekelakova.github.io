@@ -1,0 +1,169 @@
+@viewport { width: auto; }
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div.content {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#menu {
+  max-width: 20vw;
+  position: fixed;
+  top: 100px;
+}
+
+header {
+  padding: 12px 35px !important;
+  position: relative;
+}
+
+header div.title {
+  padding: 0 0 35px 0;
+  font-size: 40px;
+  position: fixed;
+  top: 50px;
+}
+
+header div.title a {
+  text-decoration: none;
+}
+
+header nav ul.menu {
+  list-style-type: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+header nav ul li {
+  padding: 0 0 5px 0;
+}
+
+header nav ul li a, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+div.expo-content {
+  width: 100vw;
+  display: block;
+  margin-top: 13vh;
+}
+
+div.cv-content, img.cover-photo {
+  max-width: 100vw;
+  display: block;
+}
+
+div.cv-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+div.cv-content {
+  margin: 120px 0 0 200px;
+}
+
+img.cover-photo {
+  height: calc(100vh - 16px);
+}
+
+div.expo-content img.expo-img {
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 60vh;
+}
+
+div.expo-content img.expo-img:not(:last-child) {
+  margin-top: 30px;
+}
+
+div.contact-info, div.education-content, div.exhibition-content {
+  margin: 30px 0 0 0;
+}
+
+div.expo-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+div.expo-images-2-column {
+
+}
+
+/*div.expo-images-3-column {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*}*/
+
+/*img.column-3 {*/
+/*  position: relative;*/
+/*  min-width: 33%;*/
+/*}*/
+
+div.expo-technique {
+  margin: 20px 0;
+  text-align: center;
+}
+
+div.expo-text {
+  margin: 0 25vw 5vh 25vw;
+}
+
+div.education-content, div.exhibition-content {
+  display: flex;
+}
+
+div.education-title, div.exhibitions-title, div.exhibition-content span.exhibition-title  {
+  font-weight: bold;
+}
+
+div.education-title, div.exhibitions-title {
+  width: 100px;
+}
+
+div.exhibitions-title {
+  display: table;
+}
+
+div.exhibition-content span.exhibition-title {
+  font-size: 16px;
+}
+
+div.education-info ul, div.exhibition-info ul {
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+div.exhibition-info ul {
+  display: block;
+}
+
+div.education-info ul li, div.exhibition-info ul li {
+  list-style-type: none;
+}
+
+div.exhibition-info ul li {
+  font-size: 14px;
+}
+
+div.education-info ul li:not(:last-child), div.exhibition-info ul li:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+div.education-years {
+  font-weight: bold;
+}
+
+div.footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
