@@ -28,10 +28,12 @@ header div.title {
   font-size: 40px;
   position: fixed;
   top: 50px;
+  font-weight: bold;
 }
 
 header div.title a {
   text-decoration: none;
+  color: #383E43;
 }
 
 header nav ul.menu {
@@ -52,8 +54,8 @@ header nav ul li a, a:visited {
 div.expo-content {
   width: 100vw;
   display: block;
-  margin-top: 14vh;
-  margin-left: 360px;
+  margin-top: 120px;
+  margin-left: 200px;
 }
 
 div.cv-content, img.cover-photo {
@@ -106,7 +108,7 @@ div.expo-technique {
 }
 
 div.expo-text {
-  margin: 0 25vw 5vh 25vw;
+  margin: 0 5vw 5vh 5vw;
 }
 
 div.education-content, div.exhibition-content {
