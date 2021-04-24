@@ -52,7 +52,8 @@ header nav ul li a, a:visited {
 div.expo-content {
   width: 100vw;
   display: block;
-  margin-top: 13vh;
+  margin-top: 14vh;
+  margin-left: 360px;
 }
 
 div.cv-content, img.cover-photo {
@@ -81,7 +82,7 @@ div.expo-content img.expo-img {
   max-height: 60vh;
 }
 
-div.expo-content img.expo-img:not(:last-child) {
+div.expo-content img.expo-img {
   margin-top: 30px;
 }
 
@@ -94,19 +95,10 @@ div.expo-title {
   font-size: 24px;
 }
 
-div.expo-images-2-column {
-
+div.expo-images-columns {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-/*div.expo-images-3-column {*/
-/*  display: flex;*/
-/*  flex-wrap: wrap;*/
-/*}*/
-
-/*img.column-3 {*/
-/*  position: relative;*/
-/*  min-width: 33%;*/
-/*}*/
 
 div.expo-technique {
   margin: 20px 0;
