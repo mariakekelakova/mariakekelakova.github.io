@@ -102,14 +102,18 @@ a:nth-child(5n + 4) img.cover-photo {
 }
 
 div.expo-content img.expo-img {
-  max-width: 50vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
 }
 
-div.expo-content img.expo-img {
-  margin-top: 30px;
+div.expo-content div.expo-images-columns img.expo-img {
+  max-width: 50vh;
+}
+
+div.expo-content div.expo-images-rows img.expo-img {
+  max-width: 100vh;
 }
 
 div.contact-info, div.education-content, div.exhibition-content {
