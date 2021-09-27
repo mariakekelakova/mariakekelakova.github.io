@@ -6,16 +6,23 @@ html {
   font-style: normal;
 }
 
+body {
+  margin: 0;
+}
+
 div.content {
+  margin-left: 300px;
+  margin-top: 8px;
   display: flex;
-  width: 100%;
   align-items: stretch;
 }
 
 #menu {
-  max-width: 20vw;
+  width: 300px;
+  padding-top: 100px;
   position: fixed;
-  top: 100px;
+  height: 100%;
+  background: rgb(255,255,255);
 }
 
 header {
@@ -24,9 +31,7 @@ header {
 }
 
 header div.title {
-  padding: 0 0 35px 0;
   font-size: 40px;
-  position: fixed;
   top: 50px;
   font-weight: bold;
 }
@@ -62,21 +67,18 @@ div.expo-content {
   width: 100vw;
   display: block;
   margin-top: 120px;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
 }
 
 div.cv-content {
   max-width: 100vw;
   display: block;
+  margin-top: 120px;
 }
 
 div.cv-title {
   font-weight: bold;
   font-size: 24px;
-}
-
-div.cv-content {
-  margin: 120px 50px 50px 200px;
 }
 
 div.cover-photo:nth-child(5n + 0) {
@@ -108,6 +110,10 @@ div.cover-photo:nth-child(5n + 4) {
   margin-top: 30vh;
 }
 
+div.cover-photo:last-child {
+  margin-right: 8px;
+}
+
 div.cover-photo img {
   height: 100%;
 }
@@ -120,7 +126,7 @@ div.expo-content img.expo-img {
 }
 
 div.expo-content div.expo-images-columns img.expo-img {
-  max-width: 50vh;
+  max-width: 45vh;
 }
 
 div.expo-content div.expo-images-rows img.expo-img {
