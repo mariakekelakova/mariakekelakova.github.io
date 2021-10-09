@@ -19,13 +19,19 @@ header div.title a {
   color: #383E43;
 }
 
-header i.menu-button {
+header i.menu-button, i.menu-close {
   color: #383E43;
 }
 
 header nav ul li a, a:visited {
   color: black;
   text-decoration: none;
+}
+
+header nav ul.menu {
+  list-style-type: none;
+  padding: 0;
+  font-size: 20px;
 }
 
 div.expo-technique {
@@ -42,6 +48,10 @@ div.education-info ul li, div.exhibition-info ul li {
 
 div.education-info ul li:not(:last-child), div.exhibition-info ul li:not(:last-child) {
   margin: 0 0 20px 0;
+}
+
+input[type=checkbox]{
+  display: none;
 }
 
 @media only screen and (min-width: 800px) {
@@ -65,7 +75,7 @@ div.education-info ul li:not(:last-child), div.exhibition-info ul li:not(:last-c
     position: relative;
   }
 
-  header i.menu-button {
+  .show-menu {
     display: none;
   }
 
@@ -73,12 +83,6 @@ div.education-info ul li:not(:last-child), div.exhibition-info ul li:not(:last-c
     font-size: 40px;
     top: 50px;
     font-weight: bold;
-  }
-
-  header nav ul.menu {
-    list-style-type: none;
-    padding: 0;
-    font-size: 20px;
   }
 
   header nav ul li {
@@ -243,15 +247,49 @@ div.education-info ul li:not(:last-child), div.exhibition-info ul li:not(:last-c
     margin: 15px;
   }
 
-  header i.menu-button {
+  input[type=checkbox]:checked ~ .menu{
+    display: none;
+  }
+
+  header i.menu-button, i.menu-close {
     position: fixed;
     top: 30px;
     right: 25px;
     font-size: 30px;
   }
 
-  ul.menu {
+  header i.menu-close {
+    right: 28px;
+  }
+
+  input[type=checkbox]:checked ~ label i.menu-close {
     display: none;
+  }
+
+  input[type=checkbox]:not(:checked) ~ label i.menu-button {
+    display: none;
+  }
+
+  ul.menu {
+    right: 0;
+    position: absolute;
+    background: white;
+    height: calc(100vh + 90px);
+    margin: 0;
+    width: 50vw;
+  }
+
+  ul.menu li {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header nav ul li {
+    font-size: 22px;
+  }
+
+  header nav ul li.cv {
+    font-size: 18px;
   }
 
   div.content {
@@ -292,7 +330,7 @@ div.education-info ul li:not(:last-child), div.exhibition-info ul li:not(:last-c
 
   div.expo-text {
     margin: 30px 5vw 5vh 5vw;
-    text-align: center;
+    text-align: justify;
   }
 
   div.cv-content {
@@ -308,7 +346,7 @@ div.education-info ul li:not(:last-child), div.exhibition-info ul li:not(:last-c
   }
 
   div.contact-info, div.education-content, div.exhibition-content {
-    margin: 20px 0 0 0;
+    margin: 20px 20px 0 0;
   }
 
   footer {
