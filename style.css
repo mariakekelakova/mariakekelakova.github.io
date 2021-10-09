@@ -1,5 +1,9 @@
 @viewport { width: auto; }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -10,52 +14,13 @@ body {
   margin: 0;
 }
 
-div.content {
-  margin-left: 300px;
-  margin-top: 8px;
-  display: flex;
-  align-items: stretch;
-}
-
-#menu {
-  width: 300px;
-  padding-top: 100px;
-  position: fixed;
-  height: 100%;
-  background: rgb(255,255,255);
-}
-
-header {
-  padding: 12px 35px !important;
-  position: relative;
-}
-
-header div.title {
-  font-size: 40px;
-  top: 50px;
-  font-weight: bold;
-}
-
 header div.title a {
   text-decoration: none;
   color: #383E43;
 }
 
-header nav ul.menu {
-  list-style-type: none;
-  padding: 0;
-  font-size: 20px;
-}
-
-header nav ul li {
-  margin: 0 0 10px 0;
-  padding: 5px 0 5px 5px;
-}
-
-header nav ul li.cv {
-  margin-top: 20px;
-  padding: 10px 0 5px 5px;
-  font-size: 16px;
+header i.menu-button {
+  color: #383E43;
 }
 
 header nav ul li a, a:visited {
@@ -63,146 +28,291 @@ header nav ul li a, a:visited {
   text-decoration: none;
 }
 
-div.expo-content {
-  width: 100vw;
-  display: block;
-  margin-top: 120px;
-  /*margin-left: 200px;*/
-}
-
-div.cv-content {
-  max-width: 100vw;
-  display: block;
-  margin: 120px 0 50px 0;
-}
-
-div.cv-title {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-div.cover-photo:nth-child(5n + 0) {
-  height: calc(50vh - 16px);
-  margin-left: 30px;
-  margin-top: 15vh;
-  margin-right: 30px;
-}
-
-div.cover-photo:nth-child(5n + 1) {
-  height: calc(100vh - 16px);
-}
-
-div.cover-photo:nth-child(5n + 2) {
-  height: calc(75vh - 16px);
-  margin-left: 30px;
-  margin-top: 20vh;
-}
-
-div.cover-photo:nth-child(5n + 3) {
-  height: calc(60vh - 16px);
-  margin-left: 30px;
-  margin-top: 10vh;
-}
-
-div.cover-photo:nth-child(5n + 4) {
-  height: calc(70vh - 16px);
-  margin-left: 30px;
-  margin-top: 30vh;
-}
-
-div.cover-photo:last-child {
-  margin-right: 8px;
-}
-
-div.cover-photo img {
-  height: 100%;
-}
-
-div.expo-content img.expo-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-}
-
-div.expo-content div.expo-images-columns img.expo-img {
-  max-width: 45vh;
-}
-
-div.expo-content div.expo-images-rows img.expo-img {
-  max-width: 100vh;
-}
-
-div.contact-info, div.education-content, div.exhibition-content {
-  margin: 30px 0 0 0;
-}
-
-div.expo-title {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-div.expo-images-columns {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 div.expo-technique {
-  margin: 20px 0;
   text-align: center;
 }
 
-div.expo-text {
-  margin: 0 5vw 5vh 5vw;
-}
-
-div.education-content, div.exhibition-content {
-  display: flex;
-}
-
-div.education-title, div.exhibitions-title, div.exhibition-content span.exhibition-title  {
+div.education-title, div.exhibitions-title, div.exhibition-content span.exhibition-title, div.education-years  {
   font-weight: bold;
-}
-
-div.education-title, div.exhibitions-title {
-  width: 100px;
-}
-
-div.exhibitions-title {
-  display: table;
-}
-
-div.exhibition-content span.exhibition-title {
-  font-size: 16px;
-}
-
-div.education-info ul, div.exhibition-info ul {
-  margin: 0 0 0 30px;
-  padding: 0;
-}
-
-div.exhibition-info ul {
-  display: block;
 }
 
 div.education-info ul li, div.exhibition-info ul li {
   list-style-type: none;
 }
 
-div.exhibition-info ul li {
-  font-size: 14px;
-}
-
 div.education-info ul li:not(:last-child), div.exhibition-info ul li:not(:last-child) {
   margin: 0 0 20px 0;
 }
 
-div.education-years {
-  font-weight: bold;
+@media only screen and (min-width: 800px) {
+  div.content {
+    margin-left: 300px;
+    margin-top: 8px;
+    display: flex;
+    align-items: stretch;
+  }
+
+  #menu {
+    width: 300px;
+    padding-top: 100px;
+    position: fixed;
+    height: 100%;
+    background: rgb(255,255,255);
+  }
+
+  header {
+    padding: 12px 35px !important;
+    position: relative;
+  }
+
+  header i.menu-button {
+    display: none;
+  }
+
+  header div.title {
+    font-size: 40px;
+    top: 50px;
+    font-weight: bold;
+  }
+
+  header nav ul.menu {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  header nav ul li {
+    margin: 0 0 10px 0;
+    padding: 5px 0 5px 5px;
+  }
+
+  header nav ul li.cv {
+    margin-top: 20px;
+    padding: 10px 0 5px 5px;
+    font-size: 16px;
+  }
+
+  div.expo-content {
+    width: 100vw;
+    display: block;
+    margin-top: 120px;
+  }
+
+  div.cv-content {
+    max-width: 100vw;
+    display: block;
+    margin: 120px 0 50px 0;
+  }
+
+  div.cv-title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  div.cover-photo:nth-child(5n + 0) {
+    height: calc(50vh - 16px);
+    margin-left: 30px;
+    margin-top: 15vh;
+    margin-right: 30px;
+  }
+
+  div.cover-photo:nth-child(5n + 1) {
+    height: calc(100vh - 16px);
+  }
+
+  div.cover-photo:nth-child(5n + 2) {
+    height: calc(75vh - 16px);
+    margin-left: 30px;
+    margin-top: 20vh;
+  }
+
+  div.cover-photo:nth-child(5n + 3) {
+    height: calc(60vh - 16px);
+    margin-left: 30px;
+    margin-top: 10vh;
+  }
+
+  div.cover-photo:nth-child(5n + 4) {
+    height: calc(70vh - 16px);
+    margin-left: 30px;
+    margin-top: 30vh;
+  }
+
+  div.cover-photo:last-child {
+    margin-right: 8px;
+  }
+
+  div.cover-photo img {
+    height: 100%;
+  }
+
+  div.expo-content img.expo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  div.expo-content div.expo-images-columns img.expo-img {
+    max-width: 45vh;
+  }
+
+  div.expo-content div.expo-images-rows img.expo-img {
+    max-width: 100vh;
+  }
+
+  div.contact-info, div.education-content, div.exhibition-content {
+    margin: 30px 0 0 0;
+  }
+
+  div.expo-title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  div.expo-images-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.expo-technique {
+    margin: 20px 0;
+  }
+
+  div.expo-text {
+    margin: 0 5vw 5vh 5vw;
+  }
+
+  div.education-content, div.exhibition-content {
+    display: flex;
+  }
+
+  div.education-title, div.exhibitions-title {
+    width: 100px;
+  }
+
+  div.exhibitions-title {
+    display: table;
+  }
+
+  div.exhibition-content span.exhibition-title {
+    font-size: 16px;
+  }
+
+  div.education-info ul, div.exhibition-info ul {
+    margin: 0 0 0 30px;
+    padding: 0;
+  }
+
+  div.exhibition-info ul {
+    display: block;
+  }
+
+  div.exhibition-info ul li {
+    font-size: 14px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
 }
 
-div.footer {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
+
+
+
+@media only screen and (max-width: 800px) {
+  header {
+    width: 100%;
+  }
+
+  #menu {
+    position: fixed;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background: rgb(255,255,255);
+  }
+
+  header div.title {
+    width: 50%;
+    word-break: break-word;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px;
+  }
+
+  header i.menu-button {
+    position: fixed;
+    top: 30px;
+    right: 25px;
+    font-size: 30px;
+  }
+
+  ul.menu {
+    display: none;
+  }
+
+  div.content {
+    margin-top: 90px;
+    width: 100vw;
+  }
+
+  div.cover-photo {
+    margin: 0 auto 20px auto;
+    width: calc(100vw - 16px);
+  }
+
+  div.cover-photo img {
+    width: 100%;
+  }
+
+  div.expo-content {
+    width: calc(100vw - 16px);
+    margin: 0 auto;
+  }
+
+  div.expo-title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 100px 0 20px;
+    color: #383E43;
+  }
+
+  img.expo-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  div.expo-technique {
+    margin: 10px 0;
+  }
+
+  div.expo-text {
+    margin: 30px 5vw 5vh 5vw;
+    text-align: center;
+  }
+
+  div.cv-content {
+    max-width: 100vw;
+    display: block;
+    margin: 100px 0 30px 15px;
+  }
+
+  div.cv-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #383E43;
+  }
+
+  div.contact-info, div.education-content, div.exhibition-content {
+    margin: 20px 0 0 0;
+  }
+
+  footer {
+    text-align: center;
+    margin: 15px 0;
+  }
 }
