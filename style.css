@@ -54,7 +54,7 @@ input[type=checkbox]{
   display: none;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
   div.content {
     margin-left: 300px;
     margin-top: 8px;
@@ -72,7 +72,8 @@ input[type=checkbox]{
 
   header {
     padding: 12px 35px !important;
-    position: relative;
+    overflow: auto;
+    max-height: 95%;
   }
 
   .show-menu {
@@ -90,7 +91,7 @@ input[type=checkbox]{
     padding: 5px 0 5px 5px;
   }
 
-  header nav ul li.cv {
+  header nav ul li.portfolio-cv {
     margin-top: 20px;
     padding: 10px 0 5px 5px;
     font-size: 16px;
@@ -114,7 +115,7 @@ input[type=checkbox]{
   }
 
   div.cover-photo:nth-child(5n + 0) {
-    height: calc(50vh - 16px);
+    height: calc(60vh - 16px);
     margin-left: 30px;
     margin-top: 15vh;
     margin-right: 30px;
@@ -131,7 +132,7 @@ input[type=checkbox]{
   }
 
   div.cover-photo:nth-child(5n + 3) {
-    height: calc(60vh - 16px);
+    height: calc(75vh - 16px);
     margin-left: 30px;
     margin-top: 10vh;
   }
@@ -139,7 +140,7 @@ input[type=checkbox]{
   div.cover-photo:nth-child(5n + 4) {
     height: calc(70vh - 16px);
     margin-left: 30px;
-    margin-top: 30vh;
+    margin-top: 20vh;
   }
 
   div.cover-photo:last-child {
@@ -163,6 +164,15 @@ input[type=checkbox]{
 
   div.expo-content div.expo-images-rows img.expo-img {
     max-width: 100vh;
+  }
+
+  div.expo-content video.expo-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 1280px;
+    height: 720px;
   }
 
   div.contact-info, div.education-content, div.exhibition-content {
@@ -218,13 +228,12 @@ input[type=checkbox]{
 
   footer {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background: linear-gradient(15deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 59%, rgba(255,255,255,0) 100%);
   }
 }
-
-
-
 
 @media only screen and (max-width: 800px) {
   header {
@@ -235,7 +244,7 @@ input[type=checkbox]{
     position: fixed;
     top: 0;
     height: 90px;
-    width: 100%;
+    width: 100vw;
     background: rgb(255,255,255);
   }
 
@@ -288,7 +297,9 @@ input[type=checkbox]{
     font-size: 22px;
   }
 
-  header nav ul li.cv {
+  header nav ul li.portfolio-cv {
+    margin-top: 10px;
+    padding: 10px 0 5px 5px;
     font-size: 18px;
   }
 
@@ -322,6 +333,12 @@ input[type=checkbox]{
   img.expo-img {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  div.expo-content video.expo-video {
+    display: block;
+    margin: auto;
+    width: calc(100vw - 16px);
   }
 
   div.expo-technique {
